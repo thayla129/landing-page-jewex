@@ -6,10 +6,6 @@
  :root{
     --primary-color: #AA9F89;
     --secondary-color: #FFFFFf;
- 
- }a{
-    text-decoration: none;
-    color: inherit;
  }
  
  body{
@@ -26,7 +22,7 @@
  
 
  .logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
     font-family: Arial, sans-serif;
@@ -40,250 +36,241 @@
     justify-content: space-between;
     align-items: center;
     background-color: #AA9F89;
-    padding: 15px 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     font-family: Arial, sans-serif;
  }
  
- nav ul {
-    list-style: none;
-    display: flex;
-    gap: 80px;
+/* Estilo do Header */
+header nav ul {
+   display: flex;
+   list-style: none;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: color 0.3s;
+header nav ul li {
+   margin-left: 20px;
+}
+
+header nav ul li a {
+   text-decoration: none;
+   color: #fff;
+   font-size: 18px;
+   transition: color 0.3s;
 }
 
 .header-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
 }
 
-.search, .login-btn {
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
 
+
+.search, .login-btn {
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 10px 15px;
+   border-radius: 5px;
+   font-size: 16px;
+   transition: background-color 0.3s, color 0.3s;
 }
 
 .search:hover, .login-btn:hover {
-    background-color: #fff;
-    color: #c7b8a0;
-    transition: 0.3s;
+   background-color: #fff;
+   color: #AA9F89;
 }
 
-.search span{
-    margin-right: 8px;
-}
-
-
-
-
-
-
-
-.collection-container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    background-color:  #AA9F89;
-    padding: 40px;
-    border-radius: 20px;
-  }
-  
-  .highlighted-item {
-    flex: 1;
-    text-align: left;
-    padding-right: 40px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .title {
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 1.2;
-    position: relative;
-    z-index: 2;
-  }  
-
-
-  .description {
-    font-size: 18px;
-    margin: 20px 0;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .shop-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    position: relative;
-    z-index: 2;
-  }
-  
-  
-  .shop-button:hover {
-    background-color: #fff;
-    color: #B8AB95;
-  }
-  
-  .product-showcase {
-        width: 200px;
-        height: 300px;
-        background-color: #e2d6c4; /* Cor de fundo parecida com a imagem */
-        border-radius: 50px; /* Cria o arco arredondado */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        text-align: center;
-        position: relative;
-      
-  }
-  
-  .product-card {
-    text-align: center;
-    background-color: #AA9F89; /* Cor de fundo dos produtos */
-    padding: 20px;
-    border-radius: 50%;
-    width: 100px;
-    margin-left: 20px;
-  }
-  
-  .product-card img {
-    max-width: 100%;
-    border-radius: 20px;
-  }
-  
-  .product-card p {
-    font-size: 16px;
-    margin: 15px 0;
-    color: #fff;
-  }
-  
-  .product-card a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #fff;
-    transition: color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .product-card a:hover {
-    color: #AA9F89;
-    border-color: #AA9F89;
-  }
-  .view-now {
-    display: inline-block;
-    margin-top: 10px;
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-    border-bottom: 1px solid #333;
-  }
-  .image-overlay {
-    background-image: url('./imagem/Captura\ de\ Tela\ 2024-09-27\ às\ 09.18.08_cleanup\ \(3\).png');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    border-radius: 20px;
-  }
-
-
- main{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
- }
- .title{
-    position: relative;
-    text-align: center;
-    color: white;
- }
- .title h1{
- font-size: 20vw;
- }
- 
- .title span{
- position: absolute;
- font-size: 25vw;
- top: -40%;
- left: 0;
- opacity: 0.3;
- }
- 
- .container{
+/* Seção Hero */
+.hero-section {
    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: relative; /*50px */
+   background-color: #AA9F89;
+   height: 100vh; /* Adicionado para garantir que a seção preencha toda a tela */
+   padding: 20px;
+   position: relative;
+   width: 100%;
+
  }
- .container div{
-    width: 50%;
-    color: var(--secondary-color);
-    z-index: 1;
- }
- .container h2{
-    font-size: 4vw;
- }
- .container p{
-    width: 35vw;
-    font-size: 1.5vw;
- }
- .action{
-    display: flex;
-    justify-content: end;
-    align-items: center;
- }
- .container a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-    height: 100px;
-    width: 400px;
-    color: white;
-    font-size: 48px;
- }
- 
+
+ .image-overlay {
+   background-position: center;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 40%;
+   z-index: 0;
+   border-radius: 50px;
+}
+
+.hero-section .text-content h1 { /* esse aqui é o titulo principa/ */
+   font-size: 100px;
+   color: #FFFFFf;
+   margin-bottom: 10px;
+   position: absolute;
+  top: -50%; /* Centraliza verticalmente */
+  left: 10%; /* Alinha o texto mais à esquerda */
+  transform: translateY(-50%); /* Corrige o deslocamento vertical para centralizar */
+  text-align: left; /* Texto alinhado à esquerda */
+  max-width: 100%; /* Largura máxima do texto */
+
+}
 
 
+.hero-section .text-content p { /* esse é a mini descricao */
+   margin-top: 100px;
+   font-size: 30px;
+   color: #fff;
+   margin-bottom: 30px;
+   position: absolute;
+  top: -30%; /* Centraliza verticalmente */
+  left: 10%; /* Alinha o texto mais à esquerda */
+  transform: translateY(-50%); /* Corrige o deslocamento vertical para centralizar */
+  text-align: left; /* Texto alinhado à esquerda */
+  max-width: 60%; /* Largura máxima do texto */
+
+}
+
+.hero-section .shop-now {   /*  botao do SHOP NOW*/
+   display: inline-block;
+   margin-top: 30px;
+   padding: 10px 20px;
+   background-color: #AA9F89;
+   color: #FFFFFf;
+   text-decoration: none;
+   font-size: 20px;
+   border-radius: 1px;
+   box-shadow: 2px 2px 5px #FFFFFf(0, 0, 0, 0.1);
+   position: absolute;
+  top: 30%; /* Centraliza verticalmente */
+  left: 10%; /* Alinha o texto mais à esquerda */
+  transform: translateY(-50%); /* Corrige o deslocamento vertical para centralizar */
+  text-align: left; /* Texto alinhado à esquerda */
+  max-width: 60%; /* Largura máxima do texto */
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 10px 15px;
+   cursor: pointer;
+}
+
+.hero-section .image-overlay img {
+   width: 100%;
+   height: auto;
+   border-radius: 50px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   right: 1%; /* Ajuste esse valor para mover a imagem mais para a esquerda */
+   transform: translateX(20%); /* Centraliza a imagem mais para o meio */
+   top: 80%;
+   transform: translateY(-50%);
+   max-width: 50%; /* Tamanho da imagem */
+}
+
+.hero-section .imagem-overlay img :left{
+   float: left;
+   margin-right: 500px;
+}
 
 
+/* Carrossel */
+.carousel {
+   display: flex;
+   justify-content: flex-end; /* Alinha o carrossel à direita */
+   align-items: flex-start;
+   padding: 20px;
+   margin-top: 50px;
+   width: 100%; /* O contêiner do carrossel ocupa 100% da largura */
+   background-color: #AA9F89/* Cor de fundo opcional */
+}
 
+.carousel-item {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   background-color: #AA9F89;
+   padding: 20px;
+   border-radius: 30px;
+   width: 300px; /* Ajuste a largura conforme necessário */
+   margin-right: 20px; /* Espaço entre os itens do carrossel */
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   align-items: center; /* Centraliza o conteúdo dentro de cada item */
+}
 
+.carousel-item img {
+   width: 100%; /* A imagem ocupa toda a largura do item */
+   height: auto;
+   margin-bottom: 20px;
+   border-radius: 10px;
+}
 
+.carousel-item p {
+   font-size: 24px;
+   margin-bottom: 10px;
+   line-height: 1.5;
+}
 
+.carousel-item a {
+   color: #AA9F89;
+   font-size: 16px;
+   text-decoration: underline;
+}
 
+/* Estilos para as setas de navegação */
+.arrows {
+   display: flex;
+   justify-content: space-between;
+   width: 80px;
+}
 
+.arrow-left, .arrow-right {
+   font-size: 24px;
+   cursor: pointer;
+   color: #333;
+}
 
+/* Exibição de Produtos */
+.product-showcase {
+   width: 200px;
+   height: 300px;
+   background-color: #e2d6c4;
+   border-radius: 50px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   text-align: center;
+}
 
+/* Estilos adicionais para a estrutura geral */
+main {
+   display: flex;
+   flex-direction: row; /* Posiciona os elementos em linha */
+   justify-content: flex-start; /* O conteúdo principal ficará à esquerda */
+   align-items: center;
+   padding: 20px;
+   background-color: #AA9F89;
+}
 
+.container {
+   display: flex;
+   justify-content: space-between; /* Divide o espaço entre o conteúdo e o carrossel */
+   width: 100%;
+   align-items: flex-start;
+}
+
+.container .content-left {
+   width: 60%; /* Ajuste a largura conforme necessário */
+}
+
+.container .content-right {
+   width: 20%; /* A largura do carrossel */
+}
 
 
 
@@ -294,15 +281,9 @@ nav a {
 
 
  footer{
-    height: 50px;
+    height: 60px;
     color: var(--secondary-color);
     text-align: center;
     font-style: cormorant;
  }
- .imagemanel{
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    height: 60vh;
- }
+ 
