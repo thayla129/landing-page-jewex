@@ -1,289 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- :root{
-    --primary-color: #AA9F89;
-    --secondary-color: #FFFFFf;
- }
- 
- body{
-    background-color: var(--primary-color);
-    height: 100vh;
-    display:flex;
-    flex-direction: column;
-    padding: 15px 50px;
-    text-align: right;
-    font-family: Arial, sans-serif;
+/* General reset and body styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
- 
- 
-
- .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    font-family: Arial, sans-serif;
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #AA9F89;
+   color: #3E3E3E;
 }
 
- 
- header{
+header {
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: #AA9F89;
+}
 
+.logo {
+   font-size: 2em;
+   font-weight: bold;
+   color: #FFF;
+}
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #AA9F89;
-    padding: 20px;
-    font-family: Arial, sans-serif;
- }
- 
-/* Estilo do Header */
-header nav ul {
+nav ul {
    display: flex;
    list-style: none;
-}
-
-header nav ul li {
-   margin-left: 20px;
-}
-
-header nav ul li a {
-   text-decoration: none;
-   color: #fff;
-   font-size: 18px;
-   transition: color 0.3s;
-}
-
-.header-right {
-   display: flex;
-   align-items: center;
    gap: 20px;
 }
 
-
-
-.search, .login-btn {
+nav ul li a {
    text-decoration: none;
-   color: #fff;
-   border: 1px solid #fff;
-   padding: 10px 15px;
-   border-radius: 5px;
-   font-size: 16px;
-   transition: background-color 0.3s, color 0.3s;
+   color: #FFF;
+   font-size: 1.2em;
 }
 
-.search:hover, .login-btn:hover {
-   background-color: #fff;
-   color: #AA9F89;
-}
-
-/* Seção Hero */
-.hero-section {
+.search-login {
    display: flex;
-   justify-content: center;
    align-items: center;
-   padding: relative; /*50px */
-   background-color: #AA9F89;
-   height: 100vh; /* Adicionado para garantir que a seção preencha toda a tela */
-   padding: 20px;
-   position: relative;
-   width: 100%;
-
- }
-
- .image-overlay {
-   background-position: center;
-   position: absolute;
-   top: 50%;
-   left: 0;
-   width: 40%;
-   z-index: 0;
-   border-radius: 50px;
+   gap: 15px;
 }
 
-.hero-section .text-content h1 { /* esse aqui é o titulo principa/ */
-   font-size: 100px;
-   color: #FFFFFf;
-   margin-bottom: 10px;
-   position: absolute;
-  top: -50%; /* Centraliza verticalmente */
-  left: 10%; /* Alinha o texto mais à esquerda */
-  transform: translateY(-50%); /* Corrige o deslocamento vertical para centralizar */
-  text-align: left; /* Texto alinhado à esquerda */
-  max-width: 100%; /* Largura máxima do texto */
-
-}
-
-
-.hero-section .text-content p { /* esse é a mini descricao */
-   margin-top: 100px;
-   font-size: 30px;
-   color: #fff;
-   margin-bottom: 30px;
-   position: absolute;
-  top: -30%; /* Centraliza verticalmente */
-  left: 10%; /* Alinha o texto mais à esquerda */
-  transform: translateY(-50%); /* Corrige o deslocamento vertical para centralizar */
-  text-align: left; /* Texto alinhado à esquerda */
-  max-width: 60%; /* Largura máxima do texto */
-
-}
-
-.hero-section .shop-now {   /*  botao do SHOP NOW*/
-   display: inline-block;
-   margin-top: 30px;
-   padding: 10px 20px;
-   background-color: #AA9F89;
-   color: #FFFFFf;
-   text-decoration: none;
-   font-size: 20px;
-   border-radius: 1px;
-   box-shadow: 2px 2px 5px #FFFFFf(0, 0, 0, 0.1);
-   position: absolute;
-  top: 30%; /* Centraliza verticalmente */
-  left: 10%; /* Alinha o texto mais à esquerda */
-  transform: translateY(-50%); /* Corrige o deslocamento vertical para centralizar */
-  text-align: left; /* Texto alinhado à esquerda */
-  max-width: 60%; /* Largura máxima do texto */
-  transition: background-color 0.3s, color 0.3s;
-  text-decoration: none;
-   color: #fff;
-   border: 1px solid #fff;
-   padding: 10px 15px;
+.search-login button {
+   background-color: transparent;
+   border: 2px solid #FFF;
+   padding: 5px 10px;
+   color: #FFF;
    cursor: pointer;
 }
 
-.hero-section .image-overlay img {
+.hero {
+   display: flex;
+   align-items: center;
+   padding: 50px;
+}
+
+.hero-text {
+   flex: 1;
+}
+
+.hero-text h1 {
+   font-size: 4em;
+   color: #FFF;
+}
+
+.hero-text p {
+   margin-top: 20px;
+   font-size: 1.2em;
+   color: #FFF;
+}
+
+.hero-text button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   border: 2px solid #FFF;
+   background-color: transparent;
+   color: #FFF;
+   cursor: pointer;
+}
+
+.hero-image img {
    width: 100%;
    height: auto;
-   border-radius: 50px;
-   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-   right: 1%; /* Ajuste esse valor para mover a imagem mais para a esquerda */
-   transform: translateX(20%); /* Centraliza a imagem mais para o meio */
-   top: 80%;
-   transform: translateY(-50%);
-   max-width: 50%; /* Tamanho da imagem */
 }
 
-.hero-section .imagem-overlay img :left{
-   float: left;
-   margin-right: 500px;
-}
-
-
-/* Carrossel */
 .carousel {
    display: flex;
-   justify-content: flex-end; /* Alinha o carrossel à direita */
-   align-items: flex-start;
-   padding: 20px;
-   margin-top: 50px;
-   width: 100%; /* O contêiner do carrossel ocupa 100% da largura */
-   background-color: #AA9F89/* Cor de fundo opcional */
+   gap: 20px;
+   margin-left: 20px;
 }
 
-.carousel-item {
-   display: flex;
-   flex-direction: column;
-   text-align: center;
+.product-card {
    background-color: #AA9F89;
    padding: 20px;
-   border-radius: 30px;
-   width: 300px; /* Ajuste a largura conforme necessário */
-   margin-right: 20px; /* Espaço entre os itens do carrossel */
-   text-decoration: none;
-   color: #fff;
-   border: 1px solid #fff;
-   align-items: center; /* Centraliza o conteúdo dentro de cada item */
+   text-align: center;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-item img {
-   width: 100%; /* A imagem ocupa toda a largura do item */
-   height: auto;
-   margin-bottom: 20px;
-   border-radius: 10px;
+.product-card h2 {
+   color: #FFF;
 }
 
-.carousel-item p {
-   font-size: 24px;
-   margin-bottom: 10px;
-   line-height: 1.5;
-}
-
-.carousel-item a {
-   color: #AA9F89;
-   font-size: 16px;
-   text-decoration: underline;
-}
-
-/* Estilos para as setas de navegação */
-.arrows {
-   display: flex;
-   justify-content: space-between;
-   width: 80px;
-}
-
-.arrow-left, .arrow-right {
-   font-size: 24px;
-   cursor: pointer;
-   color: #333;
-}
-
-/* Exibição de Produtos */
-.product-showcase {
-   width: 200px;
-   height: 300px;
-   background-color: #e2d6c4;
-   border-radius: 50px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+footer {
+   background-color: #AA9F89;
    padding: 20px;
    text-align: center;
+   font-size: 1.5em;
 }
 
-/* Estilos adicionais para a estrutura geral */
-main {
-   display: flex;
-   flex-direction: row; /* Posiciona os elementos em linha */
-   justify-content: flex-start; /* O conteúdo principal ficará à esquerda */
-   align-items: center;
-   padding: 20px;
-   background-color: #AA9F89;
+footer .brands span {
+   margin: 0 20px;
+   color: #FFF;
 }
-
-.container {
-   display: flex;
-   justify-content: space-between; /* Divide o espaço entre o conteúdo e o carrossel */
-   width: 100%;
-   align-items: flex-start;
-}
-
-.container .content-left {
-   width: 60%; /* Ajuste a largura conforme necessário */
-}
-
-.container .content-right {
-   width: 20%; /* A largura do carrossel */
-}
-
-
-
-
-
-
-
-
-
- footer{
-    height: 60px;
-    color: var(--secondary-color);
-    text-align: center;
-    font-style: cormorant;
- }
- 
